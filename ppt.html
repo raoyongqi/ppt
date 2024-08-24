@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>论文演示文稿</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/black.css" id="theme">
+</head>
+<body>
+
+<div class="reveal">
+    <div class="slides">
+
+        <!-- 封面 -->
+        <section>
+            <h1>基于随机森林的全国草地的植物病害预测模型构建</h1>
+            <p>饶永祺<p>
+            <p>日期：2024年8月</p>
+        </section>
+
+        <!-- 论文背景 -->
+
+        <section>
+            <h2>论文背景</h2>
+            <p>草地是我国生态系统的重要组成部分，不仅提供牧草和饲料，还在保护水土、维护生物多样性以及碳汇等方面发挥着不可替代的作用。然而，近年来由于气候变化、过度放牧和环境污染等因素，草地植物病害的发病率逐渐上升，给生态平衡和农业生产带来了严重的威胁。</p>
+        </section>
+
+        <section>
+            <h2>为什么该领域重要？</h2>
+            <p>草地植物病害不仅影响到牧草的产量和质量，还会加速草地退化，导致生态系统失衡。</p>
+            <p>草地病害的有效预测和预防，对于确保牧业生产稳定和保护草地生态系统具有重要意义。</p>
+            <p>随着大数据和人工智能技术的发展，利用机器学习算法来预测草地病害，已经成为提升草地管理效率的重要途径。</p>
+        </section>
+
+        <!-- 选题理由（概述） -->
+        <section>
+            <h2>选题理由</h2>
+            <p>本研究选择基于随机森林的草地植物病害预测模型，主要基于以下几点理由：</p>
+        </section>
+
+        <!-- 选题理由（影响） -->
+        <section>
+            <h2>当前草地病害问题的影响</h2>
+            <p>当前草地病害问题对农业生产和生态系统的影响日益严重，迫切需要更加有效的预测与管理工具。</p>
+        </section>
+
+        <!-- 选题理由（方法优势） -->
+        <section>
+            <h2>随机森林算法的优势</h2>
+            <p>随机森林算法在处理大规模、多维度的数据方面表现出色，适合应用于草地病害的复杂预测任务。</p>
+        </section>
+
+        <!-- 选题理由（全国数据应用） -->
+        <section>
+            <h2>全国数据的应用</h2>
+            <p>利用全国范围内的多源数据，能够建立更具普适性和准确性的病害预测模型，为决策者提供科学依据。</p>
+        </section>
+
+        <!-- 主要内容 -->
+        <!-- 主要内容概述 -->
+        <section>
+            <h2>主要内容</h2>
+            <p>本文主要包括以下内容：</p>
+            <ol>
+                <li><a href="#section-introduction">第一章 前言</a></li>
+                <li><a href="#section-technical-route">第二章 技术路线</a></li>
+                <li><a href="#section-preprocessing">第三章 预处理</a></li>
+                <li><a href="#section-data-analysis">第四章 数据分析</a></li>
+                <li><a href="#section-visualization">第五章 可视化</a></li>
+            </ol>
+        </section>
+
+        <!-- 第一章 前言 -->
+        <section id="section-introduction">
+            <h2>第一章 前言</h2>
+            <p>本章介绍了研究背景、研究目的以及研究的主要问题。</p>
+        </section>
+
+           <!-- 第二章 技术路线 -->
+           <section id="section-technical-route">
+            <h2>第二章 技术路线</h2>
+            <p>本章描述了本研究所采用的技术路线，包括算法选择和模型构建方法。</p>
+        </section>
+
+        <!-- FastAPI 介绍 -->
+        <section id="section-fastapi-intro">
+            <h2>FastAPI 介绍</h2>
+            <p><strong>FastAPI</strong> 是一个现代、快速（高性能）的 Web 框架，用于构建 API，基于 Python 3.7+，并使用标准的 Python 类型提示。它旨在为构建 APIs 提供更高效、更简单的工具，同时保证高性能。</p>
+            <img src="pic/fastapi.png" alt="FastAPI DOC" class="responsive-img" style="width: 100%;max-height: 400px; max-width: 400px;">
+            <p>FastAPI DOC</p>
+        </section>
+
+        <!-- 第三章 预处理概述 -->
+        <section id="section-preprocessing">
+            <h2>第三章 预处理</h2>
+            <p>本章讲解了数据预处理的过程，包括数据清洗、特征选择和数据转换。</p>
+        </section>
+
+        <section id="section-sample-info">
+            <h2>样点信息展示</h2>
+            <p>本部分展示了数据样点的信息，包括样点的位置、数据来源和主要特征。</p>
+            <img src="pic/sample.png" alt="样点信息展示示例" style="width: 100%;max-height: 300px; max-width: 300px;">
+            <p>样点信息展示示例</p>
+        </section>
+
+        <!-- 研究区概况 -->
+        <section id="section-study-area">
+            <h2>研究区概况</h2>
+            <p>本部分介绍了研究区域的基本情况，包括地理位置、气候条件和土壤特征。</p>
+            <img src="pic/china.png" alt="研究区概况示例" style="width: 100%;max-height: 300px; max-width: 300px;">
+            <p>研究区概况示例</p>
+        </section>
+
+        <!-- worldClimate 数据处理 -->
+        <section id="section-worldclimate">
+            <h2>worldClimate 数据处理</h2>
+            <p>本部分讨论了 <strong>worldClimate</strong> 数据的处理过程，包括数据清洗和特征选择。</p>
+            <img src="pic/worldClim.png" alt="worldClimate 数据处理示例" style="width: 100%; max-width: 600px;">
+            <p>worldClimate 数据处理示例</p>
+        </section>
+
+        <!-- 土壤数据处理 -->
+        <section id="section-soil-data">
+            <h2>土壤数据处理</h2>
+            <p>本部分讨论了协调世界土壤数据库（HWSD）的数据处理过程，包括数据清洗和转换。</p>
+            <img src="pic/soil.png" alt="土壤数据处理示例" style="width: 100%; max-width: 600px;">
+            <p>土壤数据处理示例</p>
+        </section>
+
+        <section id="section-plant-disease">
+            <h2>植物病害 (PL) 箱线图</h2>
+            <p>本部分展示了植物病害 (PL) 数据的箱线图，展示了植物病害严重程度的分布情况。</p>
+            <img src="pic/boxplot.png" alt="植物病害箱线图示例" style="width: 100%;max-height: 300px; max-width: 300px;">
+            <p>植物病害箱线图示例</p>
+        </section>
+
+            <!-- 第四章 数据分析 -->
+
+            <!-- 第四章 数据分析 -->
+        <section id="section-data-analysis">
+            <h2>第四章 数据分析</h2>
+            <p>本章展示了数据分析的结果，涵盖了模型训练、评估以及主要的分析结果。</p>
+        </section>
+
+        <!-- 变量重要性图 -->
+        <section id="section-variable-importance">
+            <h2>变量重要性图</h2>
+            <p>以下展示了模型中各变量的重要性，这有助于理解哪些变量对模型的预测性能影响最大。</p>
+            <img src="pic/importance2.png" alt="变量重要性图示例" class="responsive-img" style="width: 100%;max-height: 300px; max-width: 300px;">
+            <p>变量重要性图示例</p>
+        </section>
+
+        <!-- 第五章 可视化 -->
+        <section id="section-visualization">
+            <h2>第五章 可视化</h2>
+            <p>本章提供了数据分析的可视化结果，帮助更好地理解分析数据和模型表现。</p>
+        </section>
+
+        <!-- 结果展示 -->
+        <section id="section-results">
+            <h2>结果展示</h2>
+            <p>以下展示了数据分析的可视化结果，包括模型的预测表现和关键指标。</p>
+            <img src="pic/result.png" alt="结果展示示例" class="responsive-img" style="width: 100%;max-height: 300px; max-width: 300px;">
+            <p>结果展示示例</p>
+        </section>
+        <!-- 已完成的部分 -->
+        <section>
+            <h2>当前进展</h2>
+            <p>目前已经完成的部分包括：</p>
+            <ul>
+                <li>文献综述与理论框架的建立</li>
+                <li>数据收集工作已经完成</li>
+                <li>初步数据分析已经进行了</li>
+            </ul>
+        </section>
+
+        <!-- 现在的课题与解决方案 -->
+        <section>
+            <h2>现在的主要课题与解决方案</h2>
+            <p>当前面临的主要课题是......</p>
+            <ul>
+                <li>课题1：XXX，解决方案：XXX</li>
+                <li>课题2：XXX，解决方案：XXX</li>
+                <li>课题3：XXX，解决方案：XXX</li>
+            </ul>
+        </section>
+
+        <!-- 后续计划 -->
+        <section>
+            <h2>后续计划</h2>
+            <p>为了完成论文，后续的工作计划如下：</p>
+            <ul>
+                <li>进一步的分析与讨论</li>
+                <li>修订初稿</li>
+                <li>准备答辩与投稿</li>
+            </ul>
+        </section>
+
+        <!-- 感谢 -->
+        <section>
+            <h2>感谢</h2>
+            <p>感谢我的导师、家人和朋友的支持。</p>
+            <p>特别感谢参与研究的所有人。</p>
+        </section>
+
+    </div>
+</div>
+
+<!-- Reveal.js 库 -->
+<script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
+<!-- 插件支持 -->
+<script src="https://unpkg.com/reveal.js/plugin/markdown/markdown.js"></script>
+<script src="https://unpkg.com/reveal.js/plugin/highlight/highlight.js"></script>
+<script src="https://unpkg.com/reveal.js/plugin/notes/notes.js"></script>
+<script src="https://unpkg.com/reveal.js/plugin/math/math.js"></script>
+
+<script>
+    // 初始化 Reveal.js 并启用插件和 PDF 导出功能
+    Reveal.initialize({
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ],
+        pdf: true
+    });
+</script>
+
+</body>
+</html>
